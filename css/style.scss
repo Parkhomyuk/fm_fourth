@@ -1,0 +1,154 @@
+@use 'variables';
+
+body{
+    // font-family: 'Fraunces', serif;
+    // font-family: 'Montserrat', sans-serif;
+    // font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: variables.$font-size-paragraph;
+     
+    .wrapper{
+        width: 100vw;
+        height: 100vh;
+        background-color: variables.$very-dark-blue;
+        // background-image: url(../design/mobile-design.jpg);
+        // background-repeat: no-repeat;
+        // background-position: center;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .product_substrate{
+            border: 1px solid gainsboro;
+            width: 375px;
+            height: 660px;
+            padding: 0px;
+            background-color: variables.$cream;
+            // background-color: rgba(59, 215, 12, 0.173);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .product_content{
+                width: 345px;
+                height: 615px;
+                border-radius: 10px;
+                // background-color: rgba(165, 42, 42, 0.364);
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                .product_picture{
+                    width: 100%;
+                    height: 240px;
+                    background-image: url(/images/image-product-mobile.jpg);
+                    background-size: cover ;
+                    border-top-left-radius: 10px ;   
+                    border-top-right-radius: 10px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .product_category{
+                    width: 90%;
+                    height: 45px;
+                    // background-color: rgba(255, 140, 0, 0.321);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: end;
+                    margin-left: 0%;
+                    letter-spacing: 3.5px;
+                    color: grey;
+                    font-size: 12px;
+                }
+                .product_name{
+                    width: 85%;
+                    height: 75px;
+                    // background-color: rgba(255, 0, 255, 0.299);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 125%;
+                    line-height: 0.99; 
+                    font-family: 'Fraunces', serif;
+                    font-size: 110%;
+                }
+                .product_description{
+                    width: 87%;
+                    height: 110px;
+                    // background-color: rgba(255, 255, 0, 0.427);
+                    font-size: 14.5px;
+                    line-height: 1.5;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    // font-size: 100%;
+                    color: grey;
+                }
+                .product_price{
+                    width: 90%;
+                    height: 70px;
+                    // background-color: rgba(255, 99, 71, 0.39);
+                    margin-left:  7%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .real_price{
+                        font-size: 32px;
+                        font-weight: bold;
+                        font-family: 'Fraunces', serif;
+                        // font-family: 'Montserrat', sans-serif;
+                        color: variables.$dark-cyan;
+                    }
+                    .prev_price{
+                        margin-left: 18px;
+                        color: grey;
+                    }
+                }
+                .product_purches{
+                    width: 90%;
+                    height: 50px;
+                    // background-color: rgba(0, 0, 255, 0.255);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: transparent;
+                     
+                    .add_to_cart{
+                        width: 95%;
+                        height: 100%;
+                        border-radius: 10px;  
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 16px;   
+                        div{
+                            margin-left: 10px;
+                        }
+                        background-color: variables.$dark-cyan;
+                        border: 0px; 
+                        cursor: pointer;
+                        color: #fff;
+                        // font-weight: bold;                 
+                    }
+                    .add_to_cart:hover{
+                        background-color: hsl(158, 38%, 21%);
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+
+}
