@@ -162,16 +162,54 @@ body{
 
     @media (min-width: 768px) and (max-width:991px){
      
-        .wrapper{
-             
-            
-            border: 0px;
-            background-color: variables.$cream;
-            .product_substrate{
-                border: 1px solid rgb(79, 19, 114);
-                width: 90vw;
-            }
-        }
+        .w.wrapper{
+            margin: 0;
+            padding: 0;
+             background-color: variables.$cream;
+             .product_substrate{
+                
+                 width: inherit;
+                 min-height: inherit;
+                 
+                 .product_content{
+                     width: 45%;
+                     height: 40%;
+                     display: flex;
+                     flex-direction: row;
+                     justify-content: flex-start;
+                     align-items: center;
+                     .product_picture{
+                         width: 50%;
+                         height: 100%;
+                         background-image: url(../images/image-product-desktop.jpg);
+                         background-size: cover ;
+                         border-top-left-radius: 10px ;   
+                         border-bottom-left-radius: 10px;
+                         border-top-right-radius: 0px ;   
+                         img{
+                             width: 100%;
+                         }
+                     }
+                     .second_part{
+                         width: 50%;
+                         height: 100%;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: space-around;
+                         align-items: center;
+                         .product_description{                            
+                             font-size: 12px;                            
+                         }
+                         .product_purches{
+                             width: 90%;
+                             height: 12%;
+                             border-radius: 3px;
+                         }
+                     }
+             }
+         
+     }
+ }
     
 
     }
@@ -187,7 +225,7 @@ body{
                 min-height: inherit;
                 
                 .product_content{
-                    width: 30%;
+                    width: 40%;
                     height: 40%;
                     display: flex;
                     flex-direction: row;
