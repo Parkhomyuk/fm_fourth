@@ -133,6 +133,9 @@ body .wrapper .product_substrate .product_content .second_part .product_purches 
   cursor: pointer;
   color: #fff;
 }
+body .wrapper .product_substrate .product_content .second_part .product_purches .add_to_cart .btn_title {
+  margin-left: 10px;
+}
 body .wrapper .product_substrate .product_content .second_part .product_purches .add_to_cart:hover {
   background-color: hsl(158, 38%, 21%);
 }

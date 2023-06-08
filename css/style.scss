@@ -133,6 +133,7 @@ body{
                         align-items: center;
                         background-color: transparent;
                         margin-bottom: 2%;
+                       
                         
                         .add_to_cart{
                             width: 95%;
@@ -148,7 +149,10 @@ body{
                             border: 0px; 
                             cursor: pointer;
                             color: #fff;
-                            // font-weight: bold;                 
+                            // font-weight: bold;  
+                            .btn_title{
+                                margin-left: 10px;
+                            }               
                         }
                         .add_to_cart:hover{
                             background-color: hsl(158, 38%, 21%);
